@@ -13,7 +13,7 @@ describe('GitHub Login Automation', () => {
     cy.visit('https://github.com/login');
 
     cy.get('input[name="login"]').type('githubtester003@gmail.com');
-    cy.get('input[name="password"]').type('invalid_password');
+    cy.get('input[name="password"]').type('L10n5d3n');
     cy.get('input[type="submit"]').click();
 
     cy.get('#js-flash-container').should('contain', 'Incorrect username or password.');
